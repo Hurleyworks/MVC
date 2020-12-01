@@ -90,7 +90,6 @@ project  "MVC"
 	{ 
 		"nanogui",
 		"GLFW",
-		"g3log",
 		"stb",
 		"cs_signal",
 	}
