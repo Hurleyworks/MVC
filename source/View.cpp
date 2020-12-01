@@ -211,6 +211,7 @@ int main(int /* argc */, char** /* argv */) {
 			ref<View> app = new View();
 
 			// View to Model connections
+			// These work fine in Debug mode but not in Release mode
 			connect(*app, &View::sendMsg1, model, &Model::printMsg1);
 			connect(*app, &View::sendMsg2, model, &Model::printMsg2);
 			connect(*app, &View::sendMsg3, model, &Model::printMsg3);
