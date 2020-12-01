@@ -23,18 +23,16 @@ end
 	outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 
-local ROOT = "../../"
-
 project  "MVC"
 	if _ACTION == "vs2019" then
 		cppdialect "C++17"
-		location (ROOT .. "builds/VisualStudio2019/projects")
+		location ("builds/VisualStudio2019/projects")
     end
 	if _ACTION == "vs2017" then
-		location (ROOT .. "builds/VisualStudio2017/projects")
+		location ("builds/VisualStudio2017/projects")
     end
 	if _ACTION == "vs2015" then
-		location (ROOT .. "builds/VisualStudio2015/projects")
+		location ("builds/VisualStudio2015/projects")
     end
 	
 	kind "ConsoleApp"
